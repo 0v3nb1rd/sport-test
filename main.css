@@ -93,11 +93,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  /* text-decoration: underline; */
-  /* background-color: var(--grey); */
-}
-
 .container {
   max-width: 102rem;
   padding-left: 1.5rem;
