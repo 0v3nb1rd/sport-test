@@ -54,10 +54,6 @@ ol,
 ul {
   list-style: none;
 }
-.mt-3 {
-  margin-top: 3rem;
-}
-
 .textarea {
   resize: none;
   min-height: 20rem;
@@ -65,6 +61,10 @@ ul {
   padding: 1rem;
   min-width: 60rem;
   width: 75%;
+  transition: all 0.3s ease;
+}
+textarea:focus {
+  box-shadow: 0 5rem 10rem rgba(29, 25, 20, 0.25);
 }
 .btn {
   padding: 1rem 1.5rem;
@@ -195,6 +195,7 @@ header {
 .logo > img {
   width: 6rem;
   margin: 0 2rem;
+  animation: rotateY 4s infinite linear;
 }
 
 footer {
@@ -202,6 +203,8 @@ footer {
   margin-top: auto;
   padding: 3rem 0;
   text-align: center;
+}
+.footer-txt {
   font-size: 3rem;
 }
 
@@ -279,16 +282,31 @@ footer {
 
 /* !! fan-article */
 .fan-article {
-  border-bottom: 2px solid var(--black);
+  position: relative;
+  transition: all 0.4s ease 0s;
+  background-color: #fff;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem;
+}
+.fan-article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5rem 10rem rgba(29, 25, 20, 0.25);
+  z-index: 10;
+}
+.fan-article:hover .wrap {
+  border-bottom: none;
 }
 .fan-article > .txt {
   padding: 3rem 0 1rem;
 }
 .fan-article .wrap {
+  border-bottom: 2px solid var(--black);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+  transition: all 0.3s ease;
 }
 .fan-article time {
   color: var(--black);
@@ -307,29 +325,13 @@ footer {
 }
 
 /* !! Animation */
-.element {
-  animation: shake 0.3s infinite;
+@keyframes rotateY {
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0);
-  }
+.title-head {
+  margin: 3rem 0;
+  /* display: block; */
 }
