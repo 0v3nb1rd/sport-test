@@ -1,6 +1,6 @@
 /* !! Base vars */
 :root {
-  --black: #0000;
+  --black: #000000;
   --white: #ffff;
   --grey: #e6e6e6;
 }
@@ -34,17 +34,45 @@ ul {
 h1,
 .h1,
 h2,
-.h2 {
+.h2,
+h3,
+.h3 {
   text-transform: uppercase;
   font-weight: 600;
+}
+
+h2,
+.h2 {
   letter-spacing: 7px;
+}
+h3,
+.h3 {
+  font-size: 2.4rem;
 }
 
 ol,
 ul {
   list-style: none;
 }
+.mt-3 {
+  margin-top: 3rem;
+}
 
+.textarea {
+  resize: none;
+  min-height: 20rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  min-width: 60rem;
+  width: 75%;
+}
+.btn {
+  padding: 1rem 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  min-width: 15rem;
+  cursor: pointer;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -160,6 +188,7 @@ header {
 }
 
 footer {
+  border-top: 1px solid #000;
   margin-top: auto;
   padding: 3rem 0;
   text-align: center;
@@ -236,4 +265,33 @@ footer {
 }
 .section-last .desc > .itm {
   width: calc(50% - 3rem);
+}
+
+/* !! fan-article */
+.fan-article {
+  border-bottom: 2px solid var(--black);
+}
+.fan-article > .txt {
+  padding: 3rem 0 1rem;
+}
+.fan-article .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.fan-article time {
+  color: var(--black);
+  opacity: 0.7;
+}
+
+/* !! section-form */
+.section-form {
+  padding: 3rem 0;
+}
+
+.section-form > form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
