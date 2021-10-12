@@ -99,6 +99,10 @@ main {
   position: relative;
 }
 
+.inner {
+  margin-top: 10rem;
+}
+
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -144,18 +148,20 @@ a {
 /*!!  Styles */
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--white);
   z-index: 9;
+}
+.fixed {
 }
 .nav > .list {
   display: flex;
+  background-color: var(--white);
 }
 .nav > .list .itm a {
   padding: 2rem 3rem;
