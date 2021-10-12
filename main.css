@@ -258,7 +258,7 @@ footer {
 
 /* !! section-last */
 .section-last {
-  margin-top: 1rem;
+  margin: 1rem auto 5rem;
 }
 .section-last .title {
   text-align: center;
