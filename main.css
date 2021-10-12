@@ -137,8 +137,24 @@ header {
   border: 1px solid #000;
   transition: all 0.1s ease;
 }
-.nav > .list .itm a:hover {
+.nav .list .itm:hover > a,
+.nav .list .itm.active > a {
   background-color: var(--grey);
+}
+
+.nav .list.list--down {
+  position: absolute;
+  max-height: 0;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 1.5rem 1.5rem 3rem rgb(82 76 67 / 10%);
+  overflow: hidden;
+}
+.nav > .list .itm:hover .list.list--down {
+  visibility: visible;
+  max-height: 50rem;
+  -webkit-transition: max-height 0.7s;
+  transition: max-height 0.7s;
 }
 
 .logo > img {
