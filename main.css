@@ -259,6 +259,12 @@ footer > div {
   margin-top: -8rem;
   padding: 3rem;
   z-index: 9;
+  /* animation: history; */
+}
+
+.content {
+  position: relative;
+  animation: fadeIn 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
 .section-history .title {
@@ -342,6 +348,16 @@ footer > div {
 @keyframes rotateY {
   to {
     transform: rotateY(360deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 
