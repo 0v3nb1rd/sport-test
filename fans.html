@@ -8,39 +8,45 @@
   </head>
   <body>
     <header>
-      <nav class="nav fixed">
-        <ul class="list shadow">
-          <li class="itm">
-            <a href="./"><span>Main</span></a>
-          </li>
-          <li class="itm">
-            <a href="#"><span>Matches</span></a>
-            <ul class="list list--down">
-              <li class="itm">
-                <a href="#"><span>Calendar of matches</span></a>
-              </li>
-              <li class="itm">
-                <a href="#"><span>Next game</span></a>
-              </li>
-              <li class="itm">
-                <a href="#"><span>Raitings</span></a>
-              </li>
-            </ul>
-          </li>
-          <li class="itm">
-            <a href="#"><span>News</span></a>
-          </li>
-          <li class="itm active">
-            <a href="./fans.html"><span>Fans</span></a>
-          </li>
-          <li class="itm">
-            <a href="#"><span>Contacts</span></a>
-          </li>
-          <li class="itm">
-            <a href="#"><span>Admin</span></a>
-          </li>
-        </ul>
-      </nav>
+      <div class="mobile-wrap">
+        <div class="burger">
+          <img src="./img/burger.svg" alt="" />
+        </div>
+        <nav class="nav fixed">
+          <ul class="list shadow">
+            <li class="itm">
+              <a href="./"><span>Main</span></a>
+            </li>
+            <li class="itm">
+              <a href="#"><span>Matches</span></a>
+              <ul class="list list--down">
+                <li class="itm">
+                  <a href="#"><span>Calendar of matches</span></a>
+                </li>
+                <li class="itm">
+                  <a href="#"><span>Next game</span></a>
+                </li>
+                <li class="itm">
+                  <a href="#"><span>Raitings</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="itm">
+              <a href="#"><span>News</span></a>
+            </li>
+            <li class="itm active">
+              <a href="./fans.html"><span>Fans</span></a>
+            </li>
+            <li class="itm">
+              <a href="#"><span>Contacts</span></a>
+            </li>
+            <li class="itm">
+              <a href="#"><span>Admin</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <div class="logo">
         <img
           class="img-responsive logo-img"
@@ -98,15 +104,17 @@
           </article>
 
           <section class="section-form">
-            <form name="appeal">
-              <textarea
-                class="textarea"
-                name="textArea"
-                id="textArea"
-                placeholder="write appeal..."
-              ></textarea>
-              <button class="btn" type="submit">Send</button>
-            </form>
+            <div class="container">
+              <form name="appeal">
+                <textarea
+                  class="textarea"
+                  name="textArea"
+                  id="textArea"
+                  placeholder="write appeal..."
+                ></textarea>
+                <button class="btn" type="submit">Send</button>
+              </form>
+            </div>
           </section>
         </div>
       </div>
