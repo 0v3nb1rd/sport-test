@@ -464,3 +464,13 @@ footer > div {
     margin: 2rem 0 0;
   }
 }
+
+#list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0 1rem;
+}
+#list > li {
+  margin: 0 1rem;
+}
