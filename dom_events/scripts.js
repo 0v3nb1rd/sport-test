@@ -11,15 +11,26 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 (function () {
-  orderElements1('list', [1, 5, 2, 4, 3]); // First example
-  // orderElements2('list', [1, 5, 2, 4, 3]); // Second example
+  orderElements1('list'); // First simple example
+  orderElements2('list', [1, 5, 2, 4, 3]); // Second example || Sort by array
 
-  function orderElements1(id, arr = []) {
+  function orderElements1(id) {
     const documentList = document.getElementById(id);
-    if (!documentList) return null; // check if documet has id
+    let res = '';
 
-    let res = [];
+    res += documentList.firstElementChild.textContent + ', ';
+    res += documentList.lastElementChild.textContent + ', ';
+    res += documentList.firstElementChild.nextElementSibling.textContent + ', ';
+    res += documentList.children[3].textContent + ', ';
+    res += documentList.children[3].previousElementSibling.textContent;
+
+    return console.log(`Output result: ${res}`);
+  }
+
+  function orderElements2(id, arr) {
+    const documentList = document.getElementById(id);
     const sortArr = [...documentList.children];
+    let res = [];
 
     for (let i in sortArr) {
       res.push(' ' + sortArr[arr[i] - 1].textContent);
@@ -28,6 +39,7 @@
     return console.log(`Output result:${res}`);
   }
 })();
+
 ////////////////////////////////////////////////////////////////////////////////
 //////////! --------------------- Task 2 -------------- ////////////////////////
 // Write a script that uses DOM to style the page as shown below:
