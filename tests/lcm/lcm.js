@@ -6,7 +6,7 @@ function numbersIcm(m, n) {
   // if (n <= 0 || m <= 0) return [];
   // const maxNum = String(m) + n; // --> concat numbers
   let res = [];
-  for (let i = 1; i < 200; i++) {
+  for (let i = 1; i < m * n; i++) {
     if (i % m === 0 && i % n === 0) {
       res.push(i); // --> Least Common Multiple (lcm)
     }
