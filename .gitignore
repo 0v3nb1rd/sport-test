@@ -2,6 +2,9 @@
 node_modules/
 dist/
 
+docs
+coverage/
+
 # Compiled Java class files
 *.class
 
