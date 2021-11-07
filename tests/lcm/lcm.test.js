@@ -35,7 +35,7 @@ describe('testing lcm function', () => {
     expect(numbersIcm(n, m)).toEqual(toBeMuch);
   });
 
-  test('if n= 9, m= 5 shoud be equal [495, 990, 1485, 1980, 2475, 2970, 3465, 3960, 4455, 4950]', () => {
+  test('if n= 99, m= 55 shoud be equal [495, 990, 1485, 1980, 2475, 2970, 3465, 3960, 4455, 4950]', () => {
     n = 99; // change testing param
     m = 55; // change testing param
     const toBeMuch = [495, 990, 1485, 1980, 2475, 2970, 3465, 3960, 4455, 4950];
