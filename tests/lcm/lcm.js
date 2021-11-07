@@ -14,6 +14,4 @@ function numbersIcm(m, n) {
   return res;
 }
 
-// console.log(numbersIcm());
-
 module.exports = numbersIcm;

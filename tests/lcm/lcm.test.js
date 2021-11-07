@@ -23,27 +23,22 @@ describe('testing lcm function', () => {
     });
   });
 
-  test('if n= 13, m= 12 shoud be equal [156]', () => {
-    n = 13; // change testing param
-    m = 12; // change testing param
-    const toBeMuch = [156];
+  test('if n = 10, m = 20 shoud be equal [20, 40, 60, 80, 100, 120, 140, 160, 180]', () => {
+    const toBeMuch = [20, 40, 60, 80, 100, 120, 140, 160, 180];
+    expect(numbersIcm(n, m)).toEqual(toBeMuch);
+  });
+
+  test('if n = 10, m = 15 shoud be equal [30, 60, 90, 120]', () => {
+    m = 15; // change testing param
+    const toBeMuch = [30, 60, 90, 120];
 
     expect(numbersIcm(n, m)).toEqual(toBeMuch);
   });
 
-  test('if n= 9, m= 5 shoud be equal [45, 90, 135, 180]', () => {
-    n = 9; // change testing param
-    m = 5; // change testing param
-    const toBeMuch = [45, 90, 135, 180];
-
-    expect(numbersIcm(n, m)).toEqual(toBeMuch);
-  });
-
-  test('if n= 25, m= 25 shoud be equal [25, 50, 75, 100, 125, 150, 175]', () => {
-    n = 25; // change testing param
-    m = 25; // change testing param
-
-    const toBeMuch = [25, 50, 75, 100, 125, 150, 175];
+  test('if n= 9, m= 5 shoud be equal [495, 990, 1485, 1980, 2475, 2970, 3465, 3960, 4455, 4950]', () => {
+    n = 99; // change testing param
+    m = 55; // change testing param
+    const toBeMuch = [495, 990, 1485, 1980, 2475, 2970, 3465, 3960, 4455, 4950];
 
     expect(numbersIcm(n, m)).toEqual(toBeMuch);
   });
